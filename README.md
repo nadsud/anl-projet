@@ -1,5 +1,17 @@
 # Projet ANL 
 _(Branche develop par vincent caraty)_
+## TODO LIST
+
+* page restauration : pop-up au click d'une image pour afficher un aperçu avant/après
+* résolution des problème en commentaires dans les fichiers
+    * page mécanique : flex remis en ``align-items:center;`` au lieu de ``align-items:flex-start;``
+    * page home : fix du lien des devis, détails en commentaire ligne 100 et dans le css ligne 630
+* formulaires contact / devis : 
+    * regler la largeur max
+    * message de confirmation
+    * textarea à vérifier
+    * checkbox à vérifier
+* peut être intégrer [PHPMailer](https://github.com/PHPMailer/PHPMailer) pour les envois de formulaire
 
 ## explication des commits
 

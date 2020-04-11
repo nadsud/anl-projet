@@ -345,8 +345,7 @@ img {transform:rotate(deg);
 .col,btw {margin:1rem;}
 
 .meca-img{
-    
-    align-items:flex-start;
+    align-items: center;
     margin-bottom: 4rem;
 }
 .meca-img img:nth-child(1){
@@ -628,10 +627,19 @@ input[type=checkbox]:checked + label {
     background-size: 100% 100%;
     padding: 20px;
 }
-.main-aside > article:nth-child(2){
+/* on cible directement l'id */
+#devis-home{
     background-image: url(../images/devis-garage.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
+}
+/*  on transforme le lien (inline-block en block)
+    puis on lui donne la largeur maximum de son block parent
+*/
+#devis-home a{
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 .main-aside > article:nth-child(3){
     margin: 0;
