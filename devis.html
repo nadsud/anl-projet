@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <!--css styles-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/checkbox.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -131,16 +132,33 @@
                                 
                                 <div class="col-xs-12">
                                         
-                                    <div class="styled-input wide">	
-                                        
-                                        <select name="select"  size="4" multiple>
-                                        <option value="#">-Choisissez le service-</option>   
-                                        <option value="carrosserie">Carrosserie</option>
-                                        <option value="peinture">Peinture</option>
-                                        <option value="mecanique">Mécanique</option>
-                                        <option value="autre">Autre</option>
-                                        </select>
-                                        
+                                    <div class="center">	
+                                        <p>-Choisissez le service-</p>
+                                        <div class="row ard">
+                                            <input class="inp-cbx" id="carrosserie" type="checkbox" style="display: none;"/>
+                                            <label class="cbx" for="carrosserie"><span>
+                                                <svg width="12px" height="9px" viewbox="0 0 12 9">
+                                                    <polyline points="1 5 4 8 11 1"></polyline>
+                                                </svg></span><span>Carrosserie</span></label>
+
+                                            <input class="inp-cbx" id="peinture" type="checkbox" style="display: none;"/>
+                                            <label class="cbx" for="peinture"><span>
+                                                <svg width="12px" height="9px" viewbox="0 0 12 9">
+                                                    <polyline points="1 5 4 8 11 1"></polyline>
+                                                </svg></span><span>Peinture</span></label>
+
+                                            <input class="inp-cbx" id="mecanique" type="checkbox" style="display: none;"/>
+                                            <label class="cbx" for="mecanique"><span>
+                                                <svg width="12px" height="9px" viewbox="0 0 12 9">
+                                                    <polyline points="1 5 4 8 11 1"></polyline>
+                                                </svg></span><span>Mécanique</span></label>
+
+                                            <input class="inp-cbx" id="autre" type="checkbox" style="display: none;"/>
+                                            <label class="cbx" for="autre"><span>
+                                                <svg width="12px" height="9px" viewbox="0 0 12 9">
+                                                    <polyline points="1 5 4 8 11 1"></polyline>
+                                                </svg></span><span>Autre</span></label>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-xs-12">

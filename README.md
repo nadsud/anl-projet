@@ -9,8 +9,10 @@ _(Branche develop par vincent caraty)_
 * formulaires contact / devis : 
     * regler la largeur max
     * message de confirmation
+        * a voir quand on passera au php
     * textarea à vérifier
     * checkbox à vérifier
+        * pour la selection du choix de service j'ai mis en place des checkbox, car un ``<select>`` avec des options ne permet pas de choisir plusieurs options; avec un fichier ``checkbox.css`` qui fait une jolie mise en form
 * peut être intégrer [PHPMailer](https://github.com/PHPMailer/PHPMailer) pour les envois de formulaire
 
 ## explication des commits

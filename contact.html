@@ -95,35 +95,37 @@
                         les rectifier, demander leur effacement ou exercer votre droit à la limitation du traitement de vos données par simple demande.</em></p>   
 
                     <div class="formulaire">
-                        <div class="form">
-                            <div class="col-xs-12">
-                                <div class="styled-input wide">
-                                    <input type="text" required />
-                                    <label>Nom et Prénom</label> 
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-12">
-                                <div class="styled-input">
-                                    <input type="text" required />
-                                    <label>Email</label> 
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-12">
-                                <div class="styled-input" style="float:right;">
-                                    <input type="text" required />
-                                    <label>Téléphone</label> 
-                                </div>
-                            </div>
-                            <div class="col-xs-12">
-                                <div class="styled-input wide">
-                                    <textarea required></textarea>
-                                    <label>Votre message</label>
-                                </div>
-                            </div>
-                            <div class="col-xs-12">
-                                <div class="btn-lrg submit-btn">Envoyer</div>
+                        <!-- changements fait sur le html 
+                        les balises col-md-6 par exemple viennent du framework bootstrap
+                        je les ai retiré pour plus de lisibilité, modifié légèrement les propriétés css 
+                        dans les lignes 445 -> 475
+                        -->
+                        <div class="row ard">
+                            <div class="styled-input wide">
+                                <input name="name" id="name" type="text" required />
+                                <label for="name">Nom et Prénom</label> 
                             </div>
                         </div>
+                        <div class="row btw">
+                            <div class="styled-input min">
+                                <input name="email" id="email" type="text" required />
+                                <label for="email" >Email</label> 
+                            </div>
+                            <div class="styled-input min">
+                                <input name="phone" id="phone" type="text" required />
+                                <label for="phone">Téléphone</label>
+                            </div> 
+                        </div>
+                        <div class="row ard">
+                            <div class="styled-input wide">
+                                <textarea name="content" id="content" cols="30" rows="10" required></textarea>
+                                <label for="content">Votre message</label>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="btn-lrg submit-btn">Envoyer</div>
+                        </div>
+                        
                     </div>
                 </article>  
             </div>
