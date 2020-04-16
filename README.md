@@ -17,6 +17,29 @@ _(Branche develop par vincent caraty)_
 
 ## explication des commits
 
+### ``16/04`` Mise en place des includes répétitifs
+
+pages concernées : ``mecanique.php`` , ``index.php`` , ``home.php``, ``devis.php``, ``contact.php``, ``carrosserie.php``, ``about.php``
+pages créées : ``header.html``, ``footer.html``, ``asideRight.html``, ``asideLeft.html``
+
+* Pourquoi des includes ?
+    * éviter les répétitions, comme ça lorsque le contenu du ``<header>`` doit être changé, comme le chemin d'un lien par exemple, il sera changé pour toutes les pages.
+* Comment ça marche ?
+    * il suffit de passer l'extansion d'une page en ``.php`` et elle pourra appeler une partie de page grâce à un ``include`` 
+
+* exemple :
+
+    * J'ai créé le contenu du ``<footer>`` dans le fichier ``footer.html``.
+    * (_Le footer est appelé dans toutes les pages_)
+    * Toutes les pages on été renomées en ``.php`` au lieu de ``.html``.
+    * J'ai ouvert une balise ``php`` pour que le serveur éxécute les commandes qui sont à l'intérieur. ``<?php``  ``?>``
+    * et à l'intérieur de la balise ``php`` je fais appel au footer (``footer.html``) ``<?php include 'footer.html' ?>``
+
+* WAMP
+
+Php est un langage serveur, et pour fonctionner correctement il faut qu'il soit lu par un serveur, à la base les pages étaient écritent en html et css qui peuvent être lu par un navigateur directement.
+L'utilisation de Wamp est donc nécéssaire en local lorsque l'on travail avec des fichiers contenant du php pour afficher leur contenu correctement
+
 ### ``11/04`` corrections mise en page code
 
 pages concernées : ``mecanique.html`` , ``index.html`` , ``home.html``, ``devis.html``, ``contact.html``, ``carrosserie.html``, ``about.html``, ~~apropos.html~~
