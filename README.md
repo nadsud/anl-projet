@@ -3,17 +3,11 @@ _(Branche develop par vincent caraty)_
 ## TODO LIST
 
 * page restauration : pop-up au click d'une image pour afficher un aperçu avant/après
-* résolution des problème en commentaires dans les fichiers
-    * page mécanique : flex remis en ``align-items:center;`` au lieu de ``align-items:flex-start;``
-    * page home : fix du lien des devis, détails en commentaire ligne 100 et dans le css ligne 630
+
 * formulaires contact / devis : 
-    * regler la largeur max
+    * ajouter un captchat pour éviter les bots (flood intempestif de mails)
     * message de confirmation
-        * a voir quand on passera au php
-    * textarea à vérifier
-    * checkbox à vérifier
-        * pour la selection du choix de service j'ai mis en place des checkbox, car un ``<select>`` avec des options ne permet pas de choisir plusieurs options; avec un fichier ``checkbox.css`` qui fait une jolie mise en form
-* peut être intégrer [PHPMailer](https://github.com/PHPMailer/PHPMailer) pour les envois de formulaire
+    * verification des écriture (mail = mail ; phone = phone ; content minimum )
 
 ## explication des commits
 
