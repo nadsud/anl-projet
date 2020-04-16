@@ -17,6 +17,23 @@ _(Branche develop par vincent caraty)_
 
 ## explication des commits
 
+### ``16/04`` Mise en place de PHPAutoMailer
+
+* Outils permettant d'envoyer des mails grâce à un formulaire
+* Formulaires concernés : ``devis.php`` et ``contact.php``
+
+* pour mettre en place l'envoie des mails
+    * dans le dossier ``autoMailer/`` faire une copie de ``sendMail.php``, puis la renomer en ``sendMailPerso.php``
+    * créer un fichier dans la racine du site ``.gitignore`` en y écrivant à l'intérieur ``autoMailer/sendMailPerso.php``
+    * cette manipulation sert à se que les informations qui seront inscrites dans le fichier ``sendMailPerso.php`` seront ignorées lors d'un ``git push``
+    * modifier les lignes au début du fichier ``autoMailer/sendMailPerso.php``
+```php
+$mail_proprietaire = 'jhon.doe@mail.fr';        // adresse de messagerie
+$pass = 'password';                             // mot de passe du compte
+$SMTP = 'smtp.office365.com';                   // addresse du serveur SMTP
+$port = 000 ;                                   // port du seveur SMTP
+```
+
 ### ``16/04`` Mise en place des includes répétitifs
 
 pages concernées : ``mecanique.php`` , ``index.php`` , ``home.php``, ``devis.php``, ``contact.php``, ``carrosserie.php``, ``about.php``

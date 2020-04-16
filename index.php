@@ -55,7 +55,7 @@
         
         <!--!!!!!!! ne pas mettre d'espaces entre id="attribut" modification css/style.css ligne 630 -->
         <article id="devis-home">
-            <a href="devis.html"></a>
+            <a href="devis.php"></a>
         </article>
 
         <article id="map-home">

@@ -47,29 +47,30 @@
                             demander leur effacement ou exercer votre droit à la limitation du traitement de vos données par simple demande.</em></p>   
         
                         <div class="formulaire">
+                            <form action="autoMailer/sendMailPerso.php?send=devis" method="post">
                             <div class="form">
                                 <div class="col-xs-12">
                                     <div class="styled-input wide">
-                                        <input type="text" required />
+                                        <input type="text" name="name" required />
                                         <label>Nom et Prénom</label> 
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-sm-12">
                                     <div class="styled-input">
-                                        <input type="text" required />
+                                        <input type="text" name="mail" required />
                                         <label>Email</label> 
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-sm-12">
                                     <div class="styled-input" style="float:right;">
-                                        <input type="text" required />
+                                        <input type="text" name="phone" required />
                                         <label>Téléphone</label> 
                                     </div>
                                 </div>
                                     
                                 <div class="col-xs-12">
                                     <div class="styled-input wide">
-                                        <input type="text" required />
+                                        <input type="text" name="vehicule_type" required />
                                         <label for="type">Type de véhicule (modèle, marque...)</label> 
                                     </div>
                                 </div>
@@ -79,25 +80,25 @@
                                     <div class="center">	
                                         <p>-Choisissez le service-</p>
                                         <div class="row ard">
-                                            <input class="inp-cbx" id="carrosserie" type="checkbox" style="display: none;"/>
-                                            <label class="cbx" for="carrosserie"><span>
+                                            <input class="inp-cbx" id="carrosserie" name="carrosserie" type="checkbox" style="display: none;"/>
+                                            <label class="cbx" for="carrosserie" ><span>
                                                 <svg width="12px" height="9px" viewbox="0 0 12 9">
                                                     <polyline points="1 5 4 8 11 1"></polyline>
                                                 </svg></span><span>Carrosserie</span></label>
 
-                                            <input class="inp-cbx" id="peinture" type="checkbox" style="display: none;"/>
+                                            <input class="inp-cbx" id="peinture" name="peinture" type="checkbox" style="display: none;"/>
                                             <label class="cbx" for="peinture"><span>
                                                 <svg width="12px" height="9px" viewbox="0 0 12 9">
                                                     <polyline points="1 5 4 8 11 1"></polyline>
                                                 </svg></span><span>Peinture</span></label>
 
-                                            <input class="inp-cbx" id="mecanique" type="checkbox" style="display: none;"/>
+                                            <input class="inp-cbx" id="mecanique" name="mecanique" type="checkbox" style="display: none;"/>
                                             <label class="cbx" for="mecanique"><span>
                                                 <svg width="12px" height="9px" viewbox="0 0 12 9">
                                                     <polyline points="1 5 4 8 11 1"></polyline>
                                                 </svg></span><span>Mécanique</span></label>
 
-                                            <input class="inp-cbx" id="autre" type="checkbox" style="display: none;"/>
+                                            <input class="inp-cbx" id="autre" name="autre" type="checkbox" style="display: none;"/>
                                             <label class="cbx" for="autre"><span>
                                                 <svg width="12px" height="9px" viewbox="0 0 12 9">
                                                     <polyline points="1 5 4 8 11 1"></polyline>
@@ -107,15 +108,17 @@
                                 </div>
                                 <div class="col-xs-12">
                                     <div class="styled-input wide">
-                                        <textarea name="message" cols="60" rows="10" required></textarea>
+                                        <textarea name="content" cols="60" rows="10" required></textarea>
                                         <label>Détaillez votre demande</label>
                                     </div>
                                 </div>
                                 
                                 <div class="col-xs-12">
-                                    <div class="btn-lrg submit-btn">Envoyer</div>
+                                    <input class="btn-lrg submit-btn" type="submit" value="Envoyer">
                                 </div>
+
                             </div><!-- fin <form> -->
+                            </form>
                         </div><!-- fin class formulaire -->
 
                     </article><!-- fin <article> Demande de devis --> 

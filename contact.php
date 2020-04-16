@@ -46,6 +46,7 @@
                         je les ai retiré pour plus de lisibilité, modifié légèrement les propriétés css 
                         dans les lignes 445 -> 475
                         -->
+                        <form action="autoMailer/sendMailPerso.php?send=contact" method="post">
                         <div class="row ard">
                             <div class="styled-input wide">
                                 <input name="name" id="name" type="text" required />
@@ -54,8 +55,8 @@
                         </div>
                         <div class="row btw">
                             <div class="styled-input min">
-                                <input name="email" id="email" type="text" required />
-                                <label for="email" >Email</label> 
+                                <input name="mail" id="mail" type="text" required />
+                                <label for="mail" >Email</label> 
                             </div>
                             <div class="styled-input min">
                                 <input name="phone" id="phone" type="text" required />
@@ -68,10 +69,10 @@
                                 <label for="content">Votre message</label>
                             </div>
                         </div>
-                        <div>
-                            <div class="btn-lrg submit-btn">Envoyer</div>
+                        <div class="col-xs-12">
+                            <input class="btn-lrg submit-btn" type="submit" value="Envoyer">
                         </div>
-                        
+                        </form>
                     </div>
                 </article>  
             </div>
