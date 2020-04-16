@@ -40,6 +40,10 @@ pages créées : ``header.html``, ``footer.html``, ``asideRight.html``, ``asideL
 Php est un langage serveur, et pour fonctionner correctement il faut qu'il soit lu par un serveur, à la base les pages étaient écritent en html et css qui peuvent être lu par un navigateur directement.
 L'utilisation de Wamp est donc nécéssaire en local lorsque l'on travail avec des fichiers contenant du php pour afficher leur contenu correctement
 
+* Divers fixs
+    * largeur aside et container, qui occasionnait l'écrasement de l'aside de droite
+    * réduction de la taille ``.meca-img`` qui sortait du cadre due au fix précédent
+
 ### ``11/04`` corrections mise en page code
 
 pages concernées : ``mecanique.html`` , ``index.html`` , ``home.html``, ``devis.html``, ``contact.html``, ``carrosserie.html``, ``about.html``, ~~apropos.html~~
