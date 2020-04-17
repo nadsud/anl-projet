@@ -88,7 +88,8 @@ color:black;}
     
 }
 .container{
-    max-width: 100rem;
+
+    width: 60%;
     padding-top: 2rem;
 }
 .max{
@@ -345,15 +346,14 @@ img {transform:rotate(deg);
 .col,btw {margin:1rem;}
 
 .meca-img{
-    
-    align-items:flex-start;
+    align-items: center;
     margin-bottom: 4rem;
 }
 .meca-img img:nth-child(1){
-    height: 4.3rem;
+    height: 3.8rem;
 }
 .meca-img img:nth-child(2){
-    height: 5rem;
+    height: 4.1rem;
 }
 .grey{
     align-items: center;
@@ -434,6 +434,7 @@ font-size:3rem;}
 
     /******CONTACT/ DEVIS******/
 
+
 .contact-1 {text-align: center;}
 .contact-1 >p {font-size: 2rem;}
 .horaires {background-color: #b1b189;
@@ -444,15 +445,15 @@ margin:2rem 0rem;}
 
 .col-4 >p {text-align: justify;}
 
-.formulaire {width: 100%;
-max-width: 100%;    
-display:flex;
-justify-content: center;
-align-content: center;
-flex-flow: column wrap;
-padding-bottom: 5rem; }
-
-
+.formulaire {
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    padding-bottom: 5rem;
+    
+}
 
 input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
     font-size: 0.75em;
@@ -464,13 +465,15 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
 
 .styled-input{
     float: left;
-    width: 29.3rem;
+    width: 100%;
     margin: 1rem 0;
     position: relative;
     border-radius: 3rem;
+    box-sizing: border-box;
 }
-
-
+.min{
+    width:49%;
+}
 
 @media only screen and (max-width: 768px){
     .styled-input {
@@ -489,12 +492,12 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
     pointer-events: none;
 }
 
-.styled-input.wide, select{ 
+.styled-input .wide, select{ 
     width: 70rem;
-    max-width: 100%;}
+    width: 100%;
+}
 
 select {
-width: 
 height: 15rem;
 font-size:1.2em;
 color:#999;
@@ -507,12 +510,13 @@ select>option {padding:0.5rem;}
 
 input,
 textarea{
+    box-sizing: border-box;
     padding: 30px;
     border: 0;
     width: 100%;
     font-size: 1rem;
     background-color: #fff;
-    color: white;
+    color: black;
     border-radius: 1.5rem;
     box-shadow: -0.1rem 0.2rem 0.4rem 0.2rem rgba(0, 0, 0, 0.3) inset;
 }
@@ -628,10 +632,19 @@ input[type=checkbox]:checked + label {
     background-size: 100% 100%;
     padding: 20px;
 }
-.main-aside > article:nth-child(2){
+/* on cible directement l'id */
+#devis-home{
     background-image: url(../images/devis-garage.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
+}
+/*  on transforme le lien (inline-block en block)
+    puis on lui donne la largeur maximum de son block parent
+*/
+#devis-home a{
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 .main-aside > article:nth-child(3){
     margin: 0;
