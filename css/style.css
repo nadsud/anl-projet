@@ -58,7 +58,22 @@ p{line-height: 3rem;}
 .center{text-align: center;}
 
 .center > h3 {font-size:4rem;}
-
+.success{
+    font-weight: bold;
+    background-color: #cae4a8;
+    font-size: 3rem;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 5px;
+    text-align: center;
+    color: forestgreen;
+}
+.error{
+    font-weight: bold;
+    background-color: blanchedalmond;
+    border-radius: 5px;
+    color: coral;
+}
 .btn-red{
     text-decoration: none;
     font-weight: bold;

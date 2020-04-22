@@ -36,7 +36,12 @@
                             Nous nous déplaçons sur rendez-vous dans un rayon de 30km autour de Foissac (30700).</p>
                     </article>
                             
-                    <article  class ="col-4">
+                    <article id="formulaire_devis" class ="col-4">
+                            <?php if(isset($_GET['send']) && $_GET['send'] == 'success'):?>
+                                <div class="success">
+                                    <p>Votre message a été envoyé avec succès !</p>
+                                </div>
+                            <?php endif; ?>
                         <h2> Formulaire de devis</h2>
                         <p><em>Informations relatives aux données collectées :Les informations recueillies sur ce formulaire sont 
                             enregistrées dans un fichier informatisé par Auto New Life  à des fins de communication uniquement 
@@ -113,8 +118,18 @@
                                     </div>
                                 </div>
                                 
-                                <div class="col-xs-12">
-                                    <input class="btn-lrg submit-btn" type="submit" value="Envoyer">
+                                <div class="col-xs-12" style="width:100%;text-align:center;">
+                                    <div class="g-recaptcha" style="display:inline-block;" data-sitekey="6Le2pOwUAAAAAKgVdbMMbWFmU96LGge7tIYwMZPc"></div>
+                                    <br/>
+                                    
+                                    <?php if(isset($_GET['send']) && $_GET['send'] == 'error'):?>
+                                        <div class="error">
+                                            <p>Pensez à remplir correctement le formulaire et à cocher le Captchat de vérification.</p>
+                                        </div>
+                                    <?php endif; ?>
+                                    <p>
+                                        <input class="btn-lrg submit-btn" type="submit" value="Envoyer">
+                                    </p>
                                 </div>
 
                             </div><!-- fin <form> -->
