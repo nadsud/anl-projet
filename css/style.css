@@ -119,6 +119,7 @@ box-shadow: 0.2rem 0.2rem 1rem #fff;
 }
 .container{
     width: 60%;
+    max-width: 900px;
     padding-top: 2rem;
 }
 .max{
@@ -319,7 +320,7 @@ main article > h3{
     font-weight: bold;
 }
 .button-first{
-    font-size: 2.5rem;
+    font-size: 1.2em;
     text-decoration: none;
     font-weight: bold;
     background-color: #971212;
@@ -343,14 +344,30 @@ main article > h3{
     width: 100%;
     padding: 3rem 4rem 3rem 4rem;
 }
-.wrapper{
-    position: relative;
+#block-image{
+    width: 70%;
+    padding:4rem;
+}
+.img-1{
+    width: 60%;
+}
+.img-2{
+    width: 60%;
+}
+.img-3{
     width: 50%;
 }
-.wrapper:hover, .cj5image .E200image .rallyeimage{
+
+.wrapper{
+    position: relative;
+    
+}
+.wrapper:hover .cj5image , .wrapper:hover .E200image, .wrapper:hover .rallyeimage{
     opacity:0.3;
 }
 .wrapper:hover .overlay{
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
+
     opacity:0.5;
 }
 .texte{
@@ -362,7 +379,7 @@ main article > h3{
 .overlay{
     position: absolute;
     opacity:0;
-    transition:.3s ease;
+    transition: opacity 300ms ease-in-out;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -371,24 +388,24 @@ main article > h3{
     width: 100%;
 }
 .cj5image {
-    width: 110%;
+    width: 100%;
     height: auto;
-    margin-top: 7rem;
+    
 }
-.cj5image .E200image .rallyeimage{
+.cj5image, .E200image, .rallyeimage{
     display: block;
     opacity: 1;
-    transition:300ms ease;
+    transition: opacity 300ms ease-in-out;
     backface-visibility: hidden;
 }
 .E200image{
-    width: 140%;
-    margin-left:3rem;
+    width: 100%;
+    
 }
 .rallyeimage{
     display: block;
-    width: 110%;
-    margin-top:2rem;
+    width: 100%;
+    
 } 
 .col-1 > p, .col-1>.green{
     text-align: center;
@@ -403,7 +420,7 @@ main article > h3{
     position: relative;
 }
 #block-text{
-    width: 70%; 
+    width: 30%; 
     height:85%;
     background-color:rgba(103, 120, 33, 0.3);
     box-shadow:0rem 0rem 1.2rem 0.4rem rgba(129, 129, 128, 0.8); 
@@ -542,14 +559,14 @@ main article > h3{
     background-size: cover;
     background-position: center;
     margin-bottom: 20px;
-    width: 30rem;
-    height: 29rem;
+    width: 31%;
+    
     box-sizing: border-box;
 }
 .resto-2 img{
     padding: 10px;
     box-sizing: border-box;
-    max-width: 30rem;
+    max-width: 100%;
     max-height:21rem;
 }
 .fa-angle-double-right{

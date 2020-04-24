@@ -1,6 +1,8 @@
 <?php 
     // ajout du <head>et <header>
-    include 'header.html' ; 
+    $title = 'Faites connaissance avec Benjamin BUTTON';
+    $description = ' Carrossier/peintre auto polyvalent depuis 15 ans. Notre atelier est la référence dans le Gard sur tous types de réparations de tôle ou plastique automobile. ';
+    include 'header.phtml' ;
 ?>
         
 <main class="main-base">
@@ -77,8 +79,8 @@
                 Dans d'autres cas, nous serions heureux de vous accueillir au garage pour diagnostiquer ensemble l'état de vôtre véhicule.</P>
                 <p><strong>Nous sommes affiliés à plusieurs assurances pour une prise en charge rapide des réparations.</strong></p>
                 
-                <div class="text-bigger-2">
-                    <P><i class="fas fa-angle-double-right"></i><a href="contact.html" class="txt-underline">Contactez nous par votre moyen favori pour toute demande</a></P>
+                <div class="text-bigger-3">
+                    <p><i class="fas fa-angle-double-right"></i><a href="contact.html" class="txt-underline">Contactez nous par votre moyen favori pour toute demande</a></p>
                 </div>
             </div>
         </div>
