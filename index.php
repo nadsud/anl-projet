@@ -14,29 +14,29 @@
     </section>
     
     <section id="discover">
-        <a href="/about.html" class="button-first">Découvrez notre atelier</a>
+        <a href="about.php" class="button-first">Découvrez notre atelier</a>
     </section>
     
     <section id="services">
         <article>
             <h3>Carrosserie</h3>
             <div>
-                <a href="/carrosserie.html"><img src="images/carrosserie_30.png" alt="nos services carrosserie peinture"></a> 
+                <a href="carrosserie.php"><img src="images/carrosserie_30.png" alt="nos services carrosserie peinture"></a> 
             </div>
         </article>
         
         <article>
             <h3>Mécanique</h3>
             <div>
-                <a href="/mecanique.html"><img href="/mecanique.html" src="images/mecanique-auto-71.png" alt="nos services mécanique"></a>
+                <a href="mecanique.php"><img href="mecanique.html" src="images/mecanique-auto-71.png" alt="nos services mécanique"></a>
             </div>
         </article>
         
         <article>
             <h3>Restauration</h3>
             <div> 
-                <a href="/restauration.html">
-                <img href="/restauration.html" src="images/restauration-auto.png" alt="nos services restauration"></a>
+                <a href="restauration.php">
+                <img src="images/restauration-auto.png" alt="nos services restauration"></a>
             </div>
         </article>
     </section>
@@ -78,7 +78,7 @@
                 <span>Confiez nous votre voiture, nous lui redonnons une seconde vie !</span><br><br>
                 Rejoignez les clients qui nous font confiance pour la réparation de petites rayures, débosselage... ou grosses restauration.
             </p>
-            <a href="/restauration.html" class="button-first">Découvrez nos restaurations</a>
+            <a href="restauration.php" class="button-first">Découvrez nos restaurations</a>
         </div>
     </article>    
     
@@ -95,11 +95,11 @@
         <p>Za de Lacré - 30700 FOISSAC</p>
         <p><i class="fas fa-phone-alt"></i>06 33 35 33 61</p>
         <p><a href="mailto:autonewlife.contact@gmail.com" class="txt-underline">autonewlife.contact@gmail.com</a></p>
-        <p><a class="txt-underline" href="/contact.html"><i class="fas fa-envelope"></i>FORMULAIRE DE CONTACT</a></p>
+        <p><a class="txt-underline" href="contact.php"><i class="fas fa-envelope"></i>FORMULAIRE DE CONTACT</a></p>
     </article>
     
     <article  id="devis-home"> 
-        <a href="devis.html"></a>
+        <a href="devis.php"></a>
     </article>
     
     <article id="map-home">

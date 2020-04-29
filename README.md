@@ -2,14 +2,37 @@
 _(Branche develop par vincent caraty)_
 ## TODO LIST
 
+* responsive à mettre en place
+
 * page restauration : pop-up au click d'une image pour afficher un aperçu avant/après
 
 * formulaires contact / devis : 
-    * ajouter un captchat pour éviter les bots (flood intempestif de mails)
-    * message de confirmation
+    * ajouter un model prise de rendez vous sur le contact.php avec date et heure souhaité
+    * message de confirmation à modifier en modal
     * verification des écriture (mail = mail ; phone = phone ; content minimum )
 
 ## explication des commits
+
+### ``29/04`` Mise en place du responsive
+
+* préparation du code et remise en forme du CSS
+* reprise des maquettes responsive pour l'adaptation
+* Adapation des asides screen => 1400px => 640px (display-none) en js
+
+### ``24/04`` Mise à jours diverses; titles & descriptions dynamiques
+
+* mises à jours diverses (css)
+* modification des meta title et description; pour les charger à partir d'une variable
+
+### ``22/04`` Mise en place du captcha google
+
+* le reCaptcha fonctionne uniquement en mode en ligne
+    * [source](https://www.google.com/recaptcha)
+
+### ``17/04`` Ajout faq.php; correction liens
+
+* Corrections de certains liens qui ne pointaient pas vers les pages correctes
+* ajout de la page faq.php
 
 ### ``16/04`` Mise en place de PHPAutoMailer
 
