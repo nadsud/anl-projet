@@ -45,17 +45,21 @@ h2{
     font-size: 3.2rem;
     font-family: "Montserrat", sans-serif;
     color :#971212;
-    text-shadow: 0.2rem 0.2rem 0.3rem black;
+    text-shadow: 0.2rem 0.1rem 0.2rem #303030;
     letter-spacing: 0.3rem;
-    margin-top: 0.5rem;
-}
+    margin-top: 0.5rem;}
+
+#about,h2{font-size:2.6rem;}
+
 h3{
     font-size: 2.5rem;
     font-family: 'Baumans', cursive;
 }
 
-p{line-height: 3rem;}
-.center{text-align: center;}
+p{line-height: 3rem;
+}
+
+.center{text-align: center;color:#303030;}
 
 .center > h3 {font-size:4rem;}
 
@@ -87,14 +91,14 @@ display: flex;
 flex-direction: row;}
 
 .container{
-width: 50%;
+width: 56%;
 padding-top: 2rem;
 }
 .max{height: 100%;}
 
 .width-medium{
 position: relative;
-width: 60%;
+width: 70%;
 }
 .ard{justify-content: space-around;}
 
@@ -117,14 +121,13 @@ width: 80%;
 padding : 0;
 margin:0;
 }
-.col-2{width: 48%;}
+.col-2{width: 50%;}
 
 .col-3{width: 32%;}
 
 .img-full img{ 
-height: 80%;
-width: 90%;}
-
+height: 90%;
+width: 100%;}
 
 
 .img-150 img{max-height: 15rem;}
@@ -169,7 +172,7 @@ line-height: 3rem;}
     /******HEADER*******/
 
 #menu-mobile{
-    display: none;
+display: none;
 }
 header{
 display: flex;
@@ -218,7 +221,7 @@ display : inline-block;
 }
 nav > ul > li > a{
 color:#fff;
-font-size: 1.8rem;
+font-size: 1.7rem;
 font-weight: bold;
 text-decoration: none;
 text-transform: uppercase;
@@ -248,7 +251,6 @@ margin:auto;
     }
 
     /**********HOME***********/
-
 
 /*****MAIN*****/
 
@@ -288,7 +290,7 @@ font-weight:800;}
 main article > h3{font-weight: bold;}
 
 .button-first {
-font-size: 2.5rem;
+font-size: 1.2em;
 text-decoration: none;
 font-weight: bold;
 background-color: #971212;
@@ -335,21 +337,22 @@ position: relative;
 .arrow{
 position: absolute;
 right: 2em;
-top: 9em;
-}
-.arrow img{
-width: 10rem;
-transform: rotate(60deg);
+top: 6em;}
 
-}
+.arrow img{
+width: 5em;
+transform: rotate(60deg);}
+
+#paint-img{margin:3rem;}
+#paint-img img{width: 30%;}
 
 /********MECANIQUE********/
 
-.col,btw {margin:1rem;}
+.col,btw {margin:2rem;}
 
 .meca-img{
 align-items:center;
-margin-bottom: 4rem;
+margin-bottom: 3rem;
 box-sizing: border-box;
   
 }
@@ -357,8 +360,10 @@ box-sizing: border-box;
 height: 3.8rem;
 }
 .meca-img img:nth-child(2){
-height: 5rem;
+height: 4rem;
 }
+
+#controle img {width: 100%;}
 .grey{
 align-items: center;
 justify-content: center;
@@ -369,8 +374,9 @@ box-shadow: 1rem 1rem 1rem grey;}
 
 .remise-img{
 position: relative;
-padding-top:3rem;
-}
+margin:3rem 1rem 1rem 1rem;}
+
+
 .remise-txt{
 line-height: 1em;
 }
@@ -384,19 +390,26 @@ font-weight: bold;
 }
 /* changer l'image points fidelité avec un canal alpha pour la transparence
     puis échanger les z-index pour intervertir le chevauchement des images */
+
+
 .remise-img img:nth-child(1){
 z-index: 1;
 height: 9rem;
 position: relative;
 left: 1rem;
+width: 30%;
+height:50%;
 }
 .remise-img img:nth-child(2){
 z-index: 1;
 height: 9rem;
 transform: perspective(60rem)rotateY(-15deg) rotateX(30deg) skew(-5deg, 0deg);
 position: relative;
-right: 1rem;
+right: 2.2rem;
+width: 60%;
+height: 80%;
 }
+
 
 /***** RESTAURATION *****/
 
@@ -407,11 +420,47 @@ float: right;
 clear: both;
 height: 21rem;
 }
-.resto-2{
+
+.effect-box{
+display: flex;   
+text-align: center;
+box-sizing: border-box;
+height:100vh;
+width: 100%;
+}
+
+.box{
+flex:1;
+overflow:hidden;
+transition: .5s;
+margin:0.2rem;
+
+}
+.box>img{
+width: 200%;
+-webkit-height: calc(100% - 100vh);
+-moz-height: calc(100% - 100vh);        
+object-fit: cover;
+transition: .5s;
+}
+
+.box:hover{flex: :1 1 auto;}
+
+.box:hover>img{
+width: 100%;
+height:100%;
+}
+
+
+.box h3{
+background-color : #a4892c99;
+}
+resto-2{
 text-align: center;
 display: flex;
-flex-wrap: wrap;
+flex-flow: row nowrap;
 }
+
 .resto-2 h3{
 background-color : #a4892c99;
 }
@@ -421,94 +470,117 @@ background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
 margin-bottom: 2rem;
-width: 30rem;
-height: 29rem;
+width: 30%;
 box-sizing: border-box;
 }
 .resto-2 img{
 padding: 1rem;
 box-sizing: border-box;
-max-width: 30rem;
+max-width: 25rem;
 max-height:21rem;}
 
 .fa-angle-double-right{color:#d45611;
 font-weight: bold;
-font-size:3rem;}
+font-size:2rem;
+}
+
 
 
 /***HOME***BANDEAU 2/ ID SECOND***/
 
-#second, #member {background-color:rgba(103, 120, 33, 0.3);
-  }
-#realisations {
+#second, #member{
+background-color:rgba(103, 120, 33, 0.3);
+}
+#realisations{
 box-sizing: border-box;
 width: 100%;
+padding: 3rem 4rem 3rem 4rem;
+}
+#block-image{
+width: 70%;
+padding:2rem;
+}
+.img-1{width: 70%;}
 
-padding: 3rem 4rem 3rem 4rem;}
+.img-2{width: 65%; margin-left:15rem;}
 
-.wrapper{
-position: relative;
-width: 50%;}
+.img-3{width: 50%;margin-left:10rem;}
 
-.wrapper:hover, .cj5image .E200image .rallyeimage{opacity:0.3;}
-.wrapper:hover .overlay {opacity:0.5;}
+.wrapper{position: relative;}
 
 
-.texte {
+.wrapper:hover .cj5image , .wrapper:hover .E200image, .wrapper:hover .rallyeimage {opacity:0.3;}
+
+.wrapper:hover .overlay{
+text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
+opacity:0.5;}
+
+.texte{
 display:block;
-color: black;
+color: #000;
 font-size: 3rem;
 font-weight: 600;
 }
-
 .overlay{
 position: absolute;
 opacity:0;
-transition:.3s ease;
+transition: opacity 300ms ease-in-out;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
 -ms-transform: translate(-50%, -50%);
 text-align: center;
-width: 100%;}
-
-.cj5image {width: 110%;height: auto;
-margin-top:7rem;
+width: 100%;
 }
 
-.cj5image .E200image .rallyeimage{
-display: block;opacity:1;
-transition:.3s ease;
-backface-visibility: hidden;}
+.img-1 .overlay {width: 130%; padding-left:8rem;}
 
+.cj5image {
+width: 130%;
+height: auto;}
+
+.cj5image, .E200image, .rallyeimage{
+display: block;
+opacity: 1;
+transition: opacity 300ms ease-in-out;
+backface-visibility: hidden;
+}
 .E200image{
-width: 140%;
-margin-left:3rem; }
-
-.rallyeimage{display: block;
-width: 110%;
-margin-top:2rem;} 
-
-.col-1 > p,
-.col-1>.green {text-align: center;
+width: 100%;
+    
 }
-.col-1>p{font-size : 1.8rem;
-line-height: 3rem;
-padding-bottom: 2rem;}
+.rallyeimage{
+display: block;
+width: 100%;
+    
+} 
+#block-text, h2 p{
+text-align: center;
+}
+.col>p{
+font-size : 1.6rem;
+line-height: 2.5rem;
 
-
-.col-1>.button-first{align-self: center;
-position: relative;}
-
-#block-text {
-width: 70%; 
-height:85%;
+}
+.col>.button-first{
+align-self: center;
+position: relative;
+}
+#block-text{
+width: 30%; 
+height:75%;
 background-color:rgba(103, 120, 33, 0.3);
 box-shadow:0rem 0rem 1.2rem 0.4rem rgba(129, 129, 128, 0.8); 
+margin-top:4rem;
 padding:4rem;}
 
+#block-text> .green {font-size:2.2rem;}
+
+#block-text> .button-first{font-size:1em;padding:1.5rem;
+margin-top:2rem;}
 
 /*****HOME***BANDEAU 3-MEMBER*****/
+
 #member{height: 20rem;
 align-items: center;
 justify-content: center;}
@@ -519,9 +591,72 @@ margin-right:3rem;}
 #fed>p {line-height: 4rem;
 font-size:2rem;}
 
+/***HOME**** MAIN-ASIDE ***INFOS***/
+
+.main-aside{
+    display: flex;
+    flex-direction: row;
+}
+.main-aside p{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.main-aside > article{
+    box-sizing: border-box;
+    width: 33.3%;
+    height: 45rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+    .main-aside .fa-phone-alt{
+        color: #971212;
+        padding: 0.4rem;
+        border: 0.2rem solid #971212;
+        border-radius: 3.3rem;
+        font-size: 2rem;
+        margin-right: 1rem;
+    }
+    .main-aside .fa-envelope{
+        color: #971212;
+        font-size: 2rem;
+        margin-right: 1rem;
+    }
+
+    .main-aside > article:nth-child(1){
+    background-image: url(../images/pattern_card_contact.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 2rem;
+}
+/* on cible directement l'id */
+#devis-home{
+    width: 40%;
+    background-image: url(../images/devis-garage.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+/*  on transforme le lien (inline-block en block)
+    puis on lui donne la largeur maximum de son block parent
+*/
+#devis-home a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.main-aside > article:nth-child(3){
+    margin: 0;}
+
+
+/****ABOUT****/
+
+
+
     /***FORMULAIRES****/
 
-/******CONTACT/ DEVIS******/
+/******CONTACT/DEVIS******/
 
 .contact-1 {text-align: center;}
 .contact-1 >p {font-size: 2rem;}
@@ -533,12 +668,13 @@ margin:2rem 0rem;}
 
 .col-4 >p {text-align: justify;}
 
-.formulaire {width: 100%;
-  
+.formulaire {
+width: 100%;
 display:flex;
-justify-content: center;
+flex-direction: column;    
+justify-content: space-between;
 align-content: center;
-flex-flow: column wrap;
+flex-direction: column;
 padding-bottom: 5rem; }
 
 
@@ -551,7 +687,7 @@ transition: all 0.225s ease;
 
 .styled-input{
     float: left;
-    width: 29.3rem;
+    width: 100%;
     margin: 1rem 0;
     position: relative;
     border-radius: 3rem;
@@ -559,6 +695,9 @@ transition: all 0.225s ease;
 }
 
 .min{width: 49%;}
+
+
+    /****RESPONSIVE 768 SUBMIT ****/
 
 @media only screen and (max-width: 768px){
 .styled-input {width:100%;}
@@ -580,7 +719,6 @@ transition: all 0.225s ease;
     max-width: 100%;}
 
 select {
-width: 
 height: 15rem;
 font-size:1.2em;
 color:#999;
@@ -593,6 +731,7 @@ select>option {padding:0.5rem;}
 
 input,
 textarea{
+    box-sizing: border-box;
     padding: 30px;
     border: 0;
     width: 100%;
@@ -645,6 +784,9 @@ transform: translateY(0.2rem);
 box-shadow: 1 1rem 1rem 0 grey;
 color:#000;}
 
+
+/****RESPONSIVE 768 SUBMIT CHECKBOX****/
+
 @media (max-width: 768px) {
     .submit-btn {
         width:100%;
@@ -664,94 +806,6 @@ input[type=checkbox]:checked + label {
 }
 
 
-    /********FAQ*******/
-
-.question a {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-  padding: 3rem 3rem 3rem 1rem;
-  color: #D45500;
-  font-size: 2rem;
-  font-weight: 600;
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.question a:hover,
-.question a:hover::after {
-  cursor: pointer;
-  color: black;
-}
-
-.question a:hover::after {
-  border: 1px solid #D45500;
-}
-
-.question a.active {
-  color:#D45500 ;
-  border-bottom: 1px solid #D45500;
-}
-
-.question a::after {
-  font-family: 'Ionicons';
-  content: '\f218';
-  position: absolute;
-  float: right;
-  right: 1rem;
-  font-size: 1rem;
-  color: #D45500;
-  padding: 5px;
-  width: 30px;
-  height: 30px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  border: 1px solid #D45500;
-  text-align: center;
-}
-
-.question a.active::after {
-  font-family: 'Ionicons';
-  content: '\f209';
-  color: black;
-  border: 1px solid black;
-}
-
-.question .answer {
-  opacity: 0;
-  padding: 0 1rem;
-  max-height: 0;
-  border-bottom: 1px solid #e5e5e5;
-  overflow: hidden;
-  clear: both;
-  -webkit-transition: all 0.2s ease 0.15s;
-  -o-transition: all 0.2s ease 0.15s;
-  transition: all 0.2s ease 0.15s;
-}
-
-.question .answer p {
-  font-size: 1rem;
-  font-weight: 400;
-}
-
-.question .answer.active {
-  opacity: 1;
-  padding: 1rem;
-  max-height: 100%;
-  -webkit-transition: all 0.35s ease 0.15s;
-  -o-transition: all 0.35s ease 0.15s;
-  transition: all 0.35s ease 0.15s;
-}
-
-
  
 /*      BADGES   */
 .badges{
@@ -763,65 +817,7 @@ input[type=checkbox]:checked + label {
 }
 
 
-    /***   ASIDE  ***/
-/*aside HOME*/
-.main-aside{
-    display: flex;
-    flex-direction: row;
-}
-.main-aside p{
-    font-size: 2rem;
-    font-weight: bold;
-}
-.main-aside > article{
-    box-sizing: border-box;
-    width: 33.3%;
-    height: 450px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-    .main-aside .fa-phone-alt{
-        color: #971212;
-        padding: 0.4rem;
-        border: 0.2rem solid #971212;
-        border-radius: 3.3rem;
-        font-size: 2rem;
-        margin-right: 1rem;
-    }
-    .main-aside .fa-envelope{
-        color: #971212;
-        font-size: 2rem;
-        margin-right: 1rem;
-    }
-
-    .main-aside > article:nth-child(1){
-    background-image: url(../images/pattern_card_contact.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    padding: 2rem;
-}
-/* on cible directement l'id */
-#devis-home{
-    background-image: url(../images/devis-garage.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-/*  on transforme le lien (inline-block en block)
-    puis on lui donne la largeur maximum de son block parent
-*/
-#devis-home a{
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
-
-
-.main-aside > article:nth-child(3){
-    margin: 0;
-}
+/********ASIDE*******/
 
 /* aside LEFT & RIGHT */
 .aside-left{
@@ -854,24 +850,24 @@ height: 100%;
 
 .aside-right .img-cadre, .aside-left .img-cadre{width: 100%;}
 
-.aside-right img{width: 100%;}
-
+.
     /* icones social */
 
 .social{
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    display: flex;
-    flex-direction: row nowrap;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 1em;
+position: absolute;
+width: 100%;
+bottom: 0;
+display: flex;
+flex-direction: row nowrap;
+justify-content: space-around;
+align-items: center;
+margin-bottom: 1em;
 }
-    .social img{
-        width: 6em;
-        margin-bottom: 1em;
-    }
+
+.social img{
+width: 4em;
+margin:2em;    
+}
 
 
 /************************
@@ -920,7 +916,7 @@ footer > div{
 
 
 /********************
-RESPONSIVE ecran 640px 
+RESPONSIVE 640px 
 **********************/
 
 @media screen and (max-width: 640px) {
@@ -929,7 +925,7 @@ RESPONSIVE ecran 640px
         display: block;
         font-size: 1.2rem;
         text-align: center;
-        padding: 20px;
+        padding: 2rem;
     }
     #footer-mobile ul{
         margin: 0;
@@ -945,8 +941,8 @@ RESPONSIVE ecran 640px
         position: fixed;
         width: 100%;
         box-sizing: border-box;
-        max-height: 80px !important;
-        padding: 10px;
+        max-height: 8rem !important;
+        padding: 1rem;
     }
     header > .logo{
         text-align: center;
@@ -959,7 +955,6 @@ RESPONSIVE ecran 640px
             height: 100%;
         }
     
-   
     
     #menu-screen{
         display: none;
@@ -980,10 +975,10 @@ RESPONSIVE ecran 640px
     /* MENU BURGER */
     .hamburger, .cross{
         background:none;
-        padding:10px;
+        padding:1rem;
         color:white;
         border:0;
-        font-size:3em;
+        font-size:3rem;
         font-weight:bold;
         cursor:pointer;
         outline:none;
@@ -993,7 +988,7 @@ RESPONSIVE ecran 640px
     .menu{
         
         box-sizing: border-box;
-        padding-top: 80px;
+        padding-top: 8rem;
         z-index:4; 
         font-weight:bold; 
         font-size:0.8em; 
@@ -1001,7 +996,7 @@ RESPONSIVE ecran 640px
         background:#f1f1f1;  
         position:fixed; 
         text-align:center; 
-        font-size:12px;
+        font-size:1.2rem;
     }
     .menu ul {
         margin: 0; 
@@ -1011,19 +1006,19 @@ RESPONSIVE ecran 640px
     }
     .menu li {
         display: block;   
-        padding:15px 0 15px 0; 
-        border-bottom:#dddddd 1px solid;
+        padding:1.5rem 0 1.5rem 0; 
+        border-bottom:#dddddd 0.1rem solid;
         text-transform: uppercase; 
     }
     .menu li:hover{
         display: block;    
         background:#ffffff; 
-        padding:15px 0 15px 0; 
+        padding:1.5rem 0 1.5rem 0; 
         border-bottom:#dddddd 1px solid;
     }
     .menu ul li a {  
         text-decoration:none; 
-        margin: 0px; 
+        margin: 0rem; 
         color:#666;
     }
     .menu ul li a:hover {  
@@ -1039,7 +1034,7 @@ RESPONSIVE ecran 640px
         color:#666;
     }
 
-    /*  home */
+    /*****HOME*****/
     
 .body{width: 100%;}
     
@@ -1068,8 +1063,8 @@ flex-direction: column;
 h1{font-size: 3.2rem;}
     
 .bg-cover {
-padding-top: 80px;
-min-height: 150px;
+padding-top: 8rem;
+min-height: 15rem;
     }
 .bg-covert > h1{font-size: 3.5rem;}
 
@@ -1077,16 +1072,18 @@ h2{font-size: 2.5rem;}
     
 h3{font-size: 2.3rem;}
     
+#discover #realisations {display:none;}   
+    
 #services{flex-direction: column;}
     
-    
+#second {height:50rem;}
     
     
     /* ABOUT */
     .container{
     padding-top: 0;
-    width: 100%;
-    box-sizing: border-box;
+    width: 50% ;
+
     }
     
     #about{
@@ -1106,17 +1103,17 @@ h3{font-size: 2.3rem;}
             display: none;
         }
     #about > article img, .container article img{
-        margin: 10px;
+        margin: 1rem;
     }
     .badges img{
-        height: 65px;
+        height: 6.5rem;
     }
     .arrow{
         display: none;
     }
-    #ss-solvant img{
-        width: 100%;
-        height: 85%;
+    .width{
+    width: 100%;
+       
     }
     /* MECA */
     .meca-img{
@@ -1137,7 +1134,7 @@ h3{font-size: 2.3rem;}
 
     
     
-    /* RESTURATION */
+    /* RESTAURATION */
     .resto-1{
         text-align: justify;
     }
