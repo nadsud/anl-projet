@@ -32,37 +32,121 @@
                     Parmi nos plus vibrantes <strong>rénovations de vehicules</strong>, voici un petit aperçu des chantiers
                     réalisés ou en cours.</p>
             </article>
-            <article class="col ">
-                <h2>Restaurations réalisées</h2>
+            
+<article class="col">
+    <h2>Restaurations réalisées</h2>
                 
-                <div class="effect-box">
+     <!--ACCORDION 1-->           
+            
+         <div class="effect-box">
                    
-                    <div class="box">
-                        <h3>205 Rallye 1989</h3>
-                       <img src="images/205-rallye-restauration.png" alt="205 rallye image">
-                    </div>   
+                <div class="box">
+                    <h3>205 Rallye 1989</h3>
+                </div>   
                  
                 
-                    <div class="box">
-                        <h3>Mercedes E200 1995</h3>
-                        <img src="images/restauration-mercedes.png" alt="image mercedes e200">
-                    </div>
-                    
-                    <div class="box">
-                        <h3>Audi TT 1995</h3>
-                        <img src="images/restauration-autiTT.png" alt="image audi tt">
-                    </div>
-                    
+                <div class="box">
+                    <h3>Mercedes E200 1995</h3>
                 </div>
+                    
+                <div class="box">
+                    <h3>Audi TT 1995</h3>
+                </div>      
+        </div>
+                          
                 
                 
-                 <div>
-                        
-                        <h3>Jeep CJ5 1965</h3>
-                        <img src="images/jeep-cj5.png" alt="image jeep cj5">
-                    </div>
+<div class="accordion-container">
+    <div class="accordion clearfix">
+        <div class="accordion-item-container">
+            <div class="accordion-item-content">
+                <div class="accordion-item-image">
+                    <img src="images/rallye-restauration.png" />
+                </div>
+                <div class="accordion-item-info">
+                    <img src="images/rallye-resto-img.png" />
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item-container">
+            <div class="accordion-item-content">
+                <div class="accordion-item-image">
+                    <img src="images/mercedes-restauration(1).png" />
+                </div>
+                <div class="accordion-item-info">
+                    <img src="images/restauration-mercedes.png" />
+                </div>
+            </div>
+        </div> 
+        <div class="accordion-item-container">
+            <div class="accordion-item-content">
+                <div class="accordion-item-image">
+                    <img src="images/audi-restauration.png" />
+                </div>
+                <div class="accordion-item-info">
+                    <img src="images/audi-restauration-img2.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!--ACCORDION 2-->
+        
+        <div class="effect-box">
+                   
+                <div class="box">
+                    <h3>Jeep CJ5 1965</h3>
+                </div>   
+                 
                 
-            </article>
+                <div class="box">
+                     <h3>Clio 16S 1993</h3>
+                </div>
+                    
+                <div class="box">
+                    <h3>Toyota Hillux</h3>
+                </div>      
+        </div> 
+                           
+                
+<div class="accordion-container">
+    <div class="accordion clearfix">
+        <div class="accordion-item-container">
+            <div class="accordion-item-content">
+                <div class="accordion-item-image">
+                    <img src="images/clio16s-restauration.png" />
+                </div>
+                <div class="accordion-item-info">
+                    <img src="images/clio16s-restauration-img2.png" />
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item-container">
+            <div class="accordion-item-content">
+                <div class="accordion-item-image">
+                    <img src="images/jeep-restauration.png" />
+                </div>
+                <div class="accordion-item-info">
+                    <img src="images/jeep-restauration-img2.png" />
+                </div>
+            </div>
+        </div> 
+        <div class="accordion-item-container">
+            <div class="accordion-item-content">
+                <div class="accordion-item-image">
+                    <img src="images/reparation-toyota.png" />
+                </div>
+                <div class="accordion-item-info">
+                    <img src="images/reparation-toyota-img2.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>       
+            
+</article>
+            
             
             <article>
                 <h2>Restaurations en cours</h2>

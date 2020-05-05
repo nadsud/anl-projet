@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title><?= $title ?></title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="<?= $description ?>">
+    
+	<!--FONTS-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap" rel="stylesheet">	
+	<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baumans&amp;display=swap" rel="stylesheet">
+    
+    <!-- Script reCAPTCHA google -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    
+    <!--Script JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="javascript/main.js" async></script>
+    <script src="javascript/jquery.accordion.js" async></script>
+    <script src="javascript/faq.js" async></script>
+    
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    
+    <!--css styles-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/checkbox.css">
+    <link rel="stylesheet" href="css/accordion.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	
+    <header>
+        <div class="logo">
+            <a href="index.php"><img src="images/logo-anl-sm.png"></a>
+        </div>
+        <nav id="menu-screen">  
+            <ul>
+                <li><a href="index.php" class="effect-underline">ACCEUIL</a></li>
+                <li><a href="about.php">A PROPOS</a></li>
+                <li><a href="carrosserie.php"class="effect-underline" >CARROSSERIE / PEINTURE</a></li>
+                <li><a href="mecanique.php" class="effect-underline" >MECANIQUE</a></li>
+                <li><a href="restauration.php" class="effect-underline">RESTAURATION</a></li>
+                <li><a href="contact.php" class="effect-underline">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div id="menu-mobile">
+            <button class="hamburger"><i class="fas fa-bars"></i></button>
+            <button class="cross"><i class="fas fa-bars"></i></button>
+        </div>
+            <div class="phone">
+                <p>
+                    <i class="fas fa-mobile-alt"></i>
+                    <span>06 33 35 33 61</span>
+                </p> 
+            </div>		
+    </header>
+    
+    <div class="menu">
+        <ul>
+            <a href="index.php"><li>accueil</li></a>
+            <a href="about.php"><li>à propos</li></a>
+            <a href="carrosserie.php"><li>carrosserie</li></a>
+            <a href="mecanique.php"><li>mécanique</li></a>
+            <a href="restauration.php"><li>Restauration</li></a>
+            <a href="contact.php"><li>contact</li></a>
+            <a href="faq.php"><li>faq</li></a>
+        </ul> 
+    </div>

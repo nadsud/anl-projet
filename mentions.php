@@ -1,6 +1,8 @@
 <?php 
-   
-    include 'header.html' ; 
+    // ajout du <head>et <header>
+    $title = 'Mentions légales garage Auto New Life';
+    $description = ' Lisez nos mentions légales et conditions d utilisations de notre site autonewlife.fr ';
+    include 'header.phtml' ;
 ?>
 
     <main class="main-base">
