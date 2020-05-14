@@ -1,14 +1,5 @@
 "use strict";
 
-
-
-
-
-
-
-
-
-
 $( document ).ready(function() {
 
     $( ".cross" ).hide();
@@ -20,16 +11,12 @@ $( document ).ready(function() {
             $( ".cross" ).show();
             });
         });
-    
     $( ".cross" ).click(function() {
         $( ".menu" ).slideToggle( "slow", function() {
             $( ".cross" ).hide();
             $( ".hamburger" ).show();
         });
     });
-    
-
-
 });
 
 let aside_left = $('.aside-left')[0]
