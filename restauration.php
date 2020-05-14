@@ -1,5 +1,5 @@
 <?php 
-    // ajout du <head>et <header>
+    // ajout du <head> et <header>
     $title = 'Restauration auto yougtimers-véhicules anciens et neufs';
     $description = ' Passionné et spécialiste en restauration de youngtimers et autos anciennes. Découvrez en images nos plus belles rénovations auto toutes marques : 205 Rallye,Jeep CJ... ';
     include 'header.phtml' ;
@@ -61,30 +61,30 @@
         <div class="accordion-item-container">
             <div class="accordion-item-content">
                 <div class="accordion-item-image">
-                    <img src="images/rallye-restauration.png" />
+                    <img src="images/restauration-205rallye-img1.png" />
                 </div>
                 <div class="accordion-item-info">
-                    <img src="images/rallye-resto-img.png" />
+                    <img src="images/restauration-205rallye-img2.png" />
                 </div>
             </div>
         </div>
         <div class="accordion-item-container">
             <div class="accordion-item-content">
                 <div class="accordion-item-image">
-                    <img src="images/mercedes-restauration(1).png" />
+                    <img src="images/restauration-mercedes-img1.png" />
                 </div>
                 <div class="accordion-item-info">
-                    <img src="images/restauration-mercedes.png" />
+                    <img src="images/restauration-mercedes-img2.png" />
                 </div>
             </div>
         </div> 
         <div class="accordion-item-container">
             <div class="accordion-item-content">
                 <div class="accordion-item-image">
-                    <img src="images/audi-restauration.png" />
+                    <img src="images/restauration-auditt-img1.png" />
                 </div>
                 <div class="accordion-item-info">
-                    <img src="images/audi-restauration-img2.png" />
+                    <img src="images/restauration-auditt-img2.png" />
                 </div>
             </div>
         </div>
@@ -115,20 +115,20 @@
         <div class="accordion-item-container">
             <div class="accordion-item-content">
                 <div class="accordion-item-image">
-                    <img src="images/clio16s-restauration.png" />
+                    <img src="images/restauration-clio16srouge-img1.png" />
                 </div>
                 <div class="accordion-item-info">
-                    <img src="images/clio16s-restauration-img2.png" />
+                    <img src="images/restauration-clio16srouge-img2.png" />
                 </div>
             </div>
         </div>
         <div class="accordion-item-container">
             <div class="accordion-item-content">
                 <div class="accordion-item-image">
-                    <img src="images/jeep-restauration.png" />
+                    <img src="images/restauration-jeepcj5-img1.png" />
                 </div>
                 <div class="accordion-item-info">
-                    <img src="images/jeep-restauration-img2.png" />
+                    <img src="images/restauration-jeepcj5-img2.png" />
                 </div>
             </div>
         </div> 
@@ -148,25 +148,33 @@
 </article>
             
             
-            <article>
+        <article>
                 <h2>Restaurations en cours</h2>
+              
                 <div class="resto-2 btw">
-                    <div>
-                        <h3>Austin Mini 1969</h3>
-                        <img src="images/mini.jpg" alt="image austin mini">
+                    <h3>Austin Mini 1969</h3>
+                    
+                    <div class="row">
+                        
+                        <img src="images/restauration-mini.png" alt="image austin mini">
+                        
                     </div>
-                    <div>
-                        <h3>Daimler DS420</h3>
-                        <img src="images/daimler_ds240.png" alt="images daimler">
+                    
+                   <h3>Clio 16S</h3>
+                    <div class="row">
+                       
+                        <img src="images/restuaration-clio16s.png" alt="image clio 16s">
                     </div>
-                    <div>
-                        <h3>Votre véhicule</h3>
-                        <img src="images/cocc.png" alt="immage coccinelle">
+                    
+                    <h3>Votre véhicule</h3>
+                    <div class="row">
+                        
+                        <img src="images/restauration-auto-cocc.png" alt="image coccinelle">
                     </div>
                 </div>
-            </article>
+                
+        </article>
           
-        
             <div class="txt-justify">
                 <h2>Un projet de rénovation ?</h2>
                 <P>Sans engagement, nous pouvons nous déplacer dans un rayon de 30 km autour de Foissac pour vos projets de restauration sur voiture complète ou partielle et/ou non roulante.
@@ -174,7 +182,7 @@
                 <p><strong>Nous sommes affiliés à plusieurs assurances pour une prise en charge rapide des réparations.</strong></p>
                 
                 <div class="text-bigger-3">
-                    <p><i class="fas fa-angle-double-right"></i><a href="contact.php" class="txt-underline"> Contactez nous par votre moyen favori pour toute demande</a></p>
+                    <p><i class="fas fa-angle-double-right"></i><a href="contact.php" class="txt-underline"> Contactez nous pour toute demande ou pour prendre RDV</a></p>
                 </div>
             </div>
         </div>
